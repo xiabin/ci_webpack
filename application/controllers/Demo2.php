@@ -6,7 +6,7 @@
  * Date: 2016/3/25
  * Time: 15:55
  */
-class Demo2 extends MY_Controller
+class Demo2 extends WebController
 {
     public function index()
     {

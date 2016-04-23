@@ -7,7 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta charset="utf-8">
     <title>webuploader上传demo</title>
     <script src="http://cdn.staticfile.org/jquery-once/2.1.1/jquery.once.js"></script>
-    <script src="<?=$public_url?>/build/common/common.js"></script>
+    <script src="<?= $static_url ?>/assets/common/common.js"></script>
 </head>
 <body>
 <style>
@@ -46,6 +46,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <button id="ctlBtn" class="btn btn-default">开始上传</button>
     </div>
 </div>
-<script src="<?=$public_url?>/build/demo2.js"></script>
+<script src="<?= $static_url ?>/assets/demo2.js"></script>
 </body>
 </html>
