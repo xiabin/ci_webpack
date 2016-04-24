@@ -1,11 +1,19 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+/**
+ * Created by PhpStorm.
+ * User: binxia3
+ * Date: 2016/4/24 0024
+ * Time: 12:13
+ */
 ?>
+
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <title>webuploader上传demo</title>
+    <script src="<?= $static_url ?>/js/lib/jquery-2.2.2.min.js"></script>
+    <script src="<?= $static_url ?>/js/lib/webuploader/webuploader.js"></script>
     <script src="<?= $static_url ?>/assets/common/common.js"></script>
 </head>
 <body>
@@ -45,6 +53,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <button id="ctlBtn" class="btn btn-default">开始上传</button>
     </div>
 </div>
-<script src="<?= $static_url ?>/assets/demo2.js"></script>
+<script src="<?= $static_url ?>/assets/demo3.js"></script>
 </body>
 </html>

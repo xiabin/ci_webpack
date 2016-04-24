@@ -11,6 +11,7 @@ module.exports = {
     entry: {
         demo1: js_dir + '/demo1/demo1.js',
         demo2: js_dir + '/demo2/demo2.js',
+        demo3: js_dir + '/demo3/demo3.js'
     },
     output: {
         filename: build_dir + '/[name].js'

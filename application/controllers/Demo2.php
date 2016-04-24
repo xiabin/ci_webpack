@@ -15,7 +15,8 @@ class Demo2 extends WebController
 
     public function do_upload()
     {
-        $config['upload_path']      = base_url() .'/uploads/';
+        $config['upload_path']      = APPPATH.'../uploads/';
+//        echo $config['upload_path']  ;exit;
         $config['allowed_types']    = '*';
         $config['max_size']     = 10000;
         $config['max_width']        = 1024;
@@ -23,15 +24,15 @@ class Demo2 extends WebController
 
         $this->load->library('upload', $config);
 
-        if ( ! $this->upload->do_upload('userfile'))
+        if ( ! $this->upload->do_upload('file'))
         {
-
-            echo false;
+            $error = array('error' => $this->upload->display_errors());
+            response(false,$error);
         }
         else
         {
-
-            echo true;
+            $data = array('upload_data' => $this->upload->data());
+            response(true,$data);
         }
     }
 

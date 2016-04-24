@@ -1,9 +1,6 @@
 /**
- * Created by xiabin on 2016/3/25.
+ * Created by binxia3 on 2016/4/24 0024.
  */
-
-require('expose?$!expose?jQuery!jquery');
-require('script!../lib/webuploader/webuploader.js')
 jQuery(function() {
    var $ = jQuery,
        $list = $('#thelist'),
@@ -20,7 +17,7 @@ jQuery(function() {
        swf: 'http://cdn.staticfile.org/webuploader/0.1.0/Uploader.swf',
 
        // 文件接收服务端。
-       server: 'http://localhost/ci_webpack/demo2/do_upload',
+       server: 'http://localhost/ci_webpack/do_upload.',
 
        // 选择文件的按钮。可选。
        // 内部根据当前运行是创建，可能是input元素，也可能是flash.
@@ -53,8 +50,7 @@ jQuery(function() {
        $percent.css( 'width', percentage * 100 + '%' );
    });
 
-   uploader.on( 'uploadSuccess', function( file,data ) {
-       console.log(data);
+   uploader.on( 'uploadSuccess', function( file ) {
        $( '#'+file.id ).find('p.state').text('已上传');
    });
 
@@ -90,10 +86,3 @@ jQuery(function() {
        }
    });
 });
-
-
-// 图片上传demo
-
-
-
-

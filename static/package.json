@@ -20,9 +20,12 @@
     "webpack": "^1.12.2"
   },
   "dependencies": {
+    "blueimp-file-upload": "^9.12.1",
     "exports-loader": "^0.6.3",
+    "expose-loader": "^0.7.1",
     "file-loader": "^0.8.5",
     "jsx-loader": "^0.13.2",
+    "script-loader": "^0.7.0",
     "url-loader": "^0.5.7",
     "webpack-require-http": "^0.1.0"
   }
